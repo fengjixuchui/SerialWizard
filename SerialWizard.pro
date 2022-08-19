@@ -17,34 +17,34 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
+    DataProcessDialog.cpp \
+    FrameInfoDialog.cpp \
+    data/SerialBridgeReadWriter.cpp \
         mainwindow.cpp \
     global.cpp \
-    FrameInfoDialog.cpp \
     CalculateCheckSumDialog.cpp \
     data/AbstractReadWriter.cpp \
     data/BridgeReadWriter.cpp \
     data/SerialReadWriter.cpp \
     data/TcpServerReadWriter.cpp \
     ConvertDataDialog.cpp \
-    serial/FixedBytesSerialController.cpp \
-    serial/FrameSerialController.cpp \
     serial/LineSerialController.cpp \
-    serial/NormalSerialController.cpp \
     serial/SerialController.cpp \
-    data/TcpClientReadWriter.cpp
+    data/TcpClientReadWriter.cpp \
+    utils/FileUtil.cpp
 
 HEADERS  += mainwindow.h \
-    global.h \
+    DataProcessDialog.h \
     FrameInfoDialog.h \
+    data/SerialBridgeReadWriter.h \
+    global.h \
     CalculateCheckSumDialog.h \
     data/AbstractReadWriter.h \
     data/BridgeReadWriter.h \
     data/SerialReadWriter.h \
     data/TcpServerReadWriter.h \
     ConvertDataDialog.h \
-    serial/FixedBytesSerialController.h \
-    serial/FrameSerialController.h \
     serial/LineSerialController.h \
-    serial/NormalSerialController.h \
     serial/SerialController.h \
-    data/TcpClientReadWriter.h
+    data/TcpClientReadWriter.h \
+    utils/FileUtil.h
